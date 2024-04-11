@@ -90,5 +90,5 @@ lock( privateApis, {
 	PrivateBlockPopover,
 	PrivatePublishDateTimePicker,
 	useSpacingSizes,
-    setBackgroundStyleDefaults,
+	setBackgroundStyleDefaults,
 } );
