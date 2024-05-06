@@ -52,6 +52,14 @@ export default function BackgroundPanel() {
 			hasBackgroundImageValue( inheritedStyle ),
 	};
 
+	const updatedSettings = {
+		...settings,
+		background: {
+			...settings.background,
+			backgroundAttachment: true,
+		},
+	};
+
 	return (
 		<StylesBackgroundPanel
 			inheritedValue={ inheritedStyle }
