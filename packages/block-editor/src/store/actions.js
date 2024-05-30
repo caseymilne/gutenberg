@@ -1008,6 +1008,9 @@ export const __unstableSplitSelection =
 		// the default block type cannot be inserted.
 		const defaultBlockName = getDefaultBlockName();
 		if (
+			// A block is only split when the selection is within the same
+			// block.
+			blockA.clientId === blockB.clientId &&
 			defaultBlockName &&
 			tail.name !== defaultBlockName &&
 			select.canInsertBlockType( defaultBlockName, anchorRootClientId )
