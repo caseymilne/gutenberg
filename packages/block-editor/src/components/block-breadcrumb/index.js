@@ -68,7 +68,9 @@ function BlockBreadcrumb( { rootLabelText } ) {
 						onClick={ () => {
 							clearSelectedBlock();
 							// Focus the editor iframe.
-							blockRef.current?.closest( 'body' )?.focus();
+							blockRef.current
+								?.closest( '.editor-styles-wrapper' )
+								?.focus();
 						} }
 					>
 						{ rootLabel }
