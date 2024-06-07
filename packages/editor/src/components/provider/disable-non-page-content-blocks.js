@@ -6,12 +6,15 @@ import { store as blockEditorStore } from '@wordpress/block-editor';
 import { useEffect } from '@wordpress/element';
 import { applyFilters } from '@wordpress/hooks';
 
-const CONTENT_ONLY_BLOCKS = applyFilters( 'editor.postContentBlockTypes', [
-	'core/post-title',
-	'core/post-featured-image',
-	'core/post-content',
-	'core/template-part',
-] );
+export const CONTENT_ONLY_BLOCKS = applyFilters(
+	'editor.postContentBlockTypes',
+	[
+		'core/post-title',
+		'core/post-featured-image',
+		'core/post-content',
+		'core/template-part',
+	]
+);
 
 /**
  * Component that when rendered, makes it so that the site editor allows only
